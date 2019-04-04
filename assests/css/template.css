@@ -1,35 +1,217 @@
+* {
+    font-family: helvetica, serif;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
-header {
+.top {
     height: 120px;
-    background: #696969;
+    background: #252525;
     display: flex;
     justify-content: center;
 }
 
-.top {
+.top_int {
     display: flex;
     width: 70%;
-    height: 120px;
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    align-items: center;
     text-transform: uppercase;
+    font-size: 18;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #8d8d8d;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.menu a:hover {
+    background-color: #8d8d8d;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #252525;
+}
+
+/*foto e descrição*/
+
+.banner {
+    background-image: url("../images/flor.jpg");
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.banner_int {
+    display: flex;
+    width: 70%;
     justify-content: space-between;
     align-items: center;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.photo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #8d8d8d;
+}
+
+.social_icon {
+    display: flex;
+    font-size: 30px;
+    margin-top: 40px;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.social_icon a {
+    color: #8d8d8d;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #8d8d8d;
+}
+
+.desc_title {
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+.desc_bar {
+    width: 70px;
+    background: #8d8d8d;
+    height: 3px;
+    margin-bottom: 40px;
+}
+
+.desc_info {
+    font-size: 25px;
+}
+
+/*portifolio*/
+
+.prot_title {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8d8d8d;
+    color: #252525;
+    font-size: 40px;
+}
+
+.port_img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.port img {
+    width: 33.3333333%;
+}
+
+.banner_port {
+    background-image: url("../images/Porti/l4.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner_port_desc {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #8d8d8d
+}
+
+.banner_port_title {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.banner_port_bar {
+    width: 60px;
+    background: #8d8d8d;
+    height: 3px;
+    margin-bottom: 40px;
+    ;
+}
+
+.banner_port_sub {
+    width: 50%;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+/*rodapé*/
+
+.footer_desc {
+    height: 300px;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_desc_int {
+    display: flex;
+    width: 70%;
+    color: #8d8d8d;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_image {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.footer_text {
+    display: flex;
+    justify-content: center;
     font-size: 18px;
+    margin-bottom: 60px;
+
 }
 
-.top a {
-    text-decoration: none;
-    color: #c0c0c0;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.footer_copy {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.top a:hover{
-    border: 3px double pink;
-    
+.footer_image a {
+    color: #8d8d8d;
 }
+
