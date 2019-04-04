@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 120px;
+    background: #696969;
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    display: flex;
+    width: 70%;
+    height: 120px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.top a {
+    text-decoration: none;
+    color: #c0c0c0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.top a:hover{
+    border: 3px double pink;
+    
+}
