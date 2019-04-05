@@ -9,6 +9,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
         integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
         crossorigin="anonymous"></script>
+    <script src="assests/js/main.js"></script>
     <title>Tais Fotografia</title>
 </head>
 
@@ -22,14 +23,32 @@
                     <img src="assests/images/logo para fundo escuro.png" alt="logo" width="150">
                 </div>
                 <div class="menu">
-                    <a href="">home</a>
-                    <a href="#sobre">sobre</a>
-                    <a href="#portifolio">portifolio</a>
-                    <a href="">contato</a>
+                    <a class="scroll" onclick="menuClick('home');">home</a>
+                    <a class="scroll" onclick="menuClick('sobre');">sobre</a>
+                    <a class="scroll" onclick="menuClick('portifolio');">portifolio</a>
+                    <a class="scroll" href="">contato</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- baner e parte do sobre -->
+    <section id="home">
+        <div class="banner_home">
+            <div class="banner_home_img">
+                <i class="fas fa-camera"></i>
+            </div>
+            <div class="banner_home_title">
+                TAIS EDUARDA
+            </div>
+            <div class="banner_home_sub">
+                FOTOGRAFIA
+            </div>
+            <div class="banner_home_bar">
+                
+            </div>
+        </div>
+    </section>
 
     <!-- baner e parte do sobre -->
     <section id="sobre">
@@ -38,8 +57,10 @@
                 <div class="photo">
                     <img src="assests/images/foto.jpg" alt="foto">
                     <div class="social_icon">
-                        <a href="https://www.facebook.com/taiseduardafotografia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/taiseduardasantos/" target="_blank"><i class="fab fa-instagram" data-fa-transform="down-1"></i></a>
+                        <a href="https://www.facebook.com/taiseduardafotografia/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/taiseduardasantos/" target="_blank"><i
+                                class="fab fa-instagram" data-fa-transform="down-1"></i></a>
                         <a href=""><i class="fab fa-whatsapp" data-fa-transform="down-1"></i></a>
                         <a href=""><i class="fab fa-facebook-messenger" data-fa-transform="down-1"></i></a>
                     </div>
@@ -107,7 +128,7 @@
         <div class="footer_desc">
             <div class="footer_desc_int">
                 <div class="footer_image">
-                    <a href=""><i class="fas fa-angle-up"></i></a> 
+                    <a onclick="menuClick('home');"><i class="fas fa-angle-up"></i></a>
                 </div>
                 <div class="footer_text">
                     Voltar ao inicio
