@@ -23,10 +23,16 @@
                     <img src="assests/images/logo para fundo escuro.png" alt="logo" width="150">
                 </div>
                 <div class="menu">
-                    <a class="scroll" onclick="menuClick('home');">home</a>
-                    <a class="scroll" onclick="menuClick('sobre');">sobre</a>
-                    <a class="scroll" onclick="menuClick('portifolio');">portifolio</a>
-                    <a class="scroll" href="">contato</a>
+                        <i class="fas fa-bars" class="menumob" onclick="toggleMenu()">
+                        <nav>
+                            </i>
+                            <ul>
+                                <li><a class="scroll" onclick="menuClick('home');">home</a></li>
+                                <li><a class="scroll" onclick="menuClick('sobre');">sobre</a></li>
+                                <li><a class="scroll" onclick="menuClick('portifolio');">portifolio</a></li>
+                                <li><a class="scroll" onclick="menuClick('contato');">contato</a></li>
+                            </ul>
+                        </nav>
                 </div>
             </div>
         </div>
@@ -45,7 +51,6 @@
                 FOTOGRAFIA
             </div>
             <div class="banner_home_bar">
-                
             </div>
         </div>
     </section>
@@ -124,6 +129,52 @@
         </div>
     </section>
 
+    <!-- contato -->
+    <section id="contato">
+        <div class="contact">
+            <div class="contact_int">
+                <div class="contact_info">
+                    <div class="contact_title">
+                        Entre em Contato
+                    </div>
+                    <div class="contact_bar">
+
+                    </div>
+                    <div class="contact_form">
+                        <form class="form" method="POST" action="./assests/php/email.php">
+                            <input class="field" required type="text" name="name" placeholder="Nome">
+                            <input class="field" type="text" name="sub" placeholder="Assunto">
+                            <input class="field" required type="text" name="email" placeholder="E-mail">
+                            <textarea class="field" required name="message" placeholder="Mensagem"></textarea>
+                            <input class="btn" type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+                <div class="contact_plus">
+                    <div class="contact_other">
+                        <i class="fas fa-phone-square alter"></i>
+                        Telefone - (19) 3813 - 3505
+                    </div>
+                    <div class="contact_other">
+                        <i class="fab fa-whatsapp-square alter"></i>
+                        Whatsapp - (19) 99657 - 2396
+                    </div>
+                    <div class="contact_other">
+                        <i class="fas fa-envelope-square alter"></i>
+                        Email: taiseduarda_tc@hotmail.com
+                    </div>
+                    <div class="contact_other">
+                        <i class="fas fa-map-marker-alt alter"></i>
+                        Endereço - Rua Ponta Porã, 24 - Jardim Barro Branco - Itapira/sp
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- rodapé do site -->
     <footer>
         <div class="footer_desc">
             <div class="footer_desc_int">
@@ -137,7 +188,6 @@
                     Copyright © 2019 | Desenvolvido por Vinicius Pii
                 </div>
             </div>
-
         </div>
     </footer>
 

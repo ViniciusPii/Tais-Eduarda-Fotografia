@@ -7,7 +7,6 @@ body {
     padding: 0;
 }
 
-
 .top {
     height: 120px;
     background: #252525;
@@ -35,21 +34,25 @@ body {
     flex: 1;
     align-items: center;
     text-transform: uppercase;
-    font-size: 18;
-    cursor: pointer;
+    font-size: 18px;
+}
+
+.menu ul, .menu li {
+    display: flex;
 }
 
 .menu a {
     text-decoration: none;
     color: #8d8d8d;
-    padding-right: 30px;
     padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    cursor: pointer;
 }
 
 .menu a:hover {
     background-color: #8d8d8d;
-    padding-top: 60px;
-    padding-bottom: 60px;
     color: #252525;
 }
 
@@ -65,9 +68,9 @@ body {
     display: flex;
     margin-top: 120px;
     flex-direction: column;
+    color: #8d8d8d;
     align-items: center;
     justify-content: center;
-    color: #8d8d8d;
 }
 
 .banner_home_img {
@@ -90,16 +93,17 @@ body {
 }
 
 .banner_home_bar {
+    display: flex;
     width: 400px;
     height: 3px;
     background-color: #8d8d8d;
     margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
 }
 
-
-
 .banner {
-    
     background-image: url("../images/flor.jpg");
     height: 700px;
     background-repeat: no-repeat;
@@ -167,16 +171,6 @@ body {
 
 /*portifolio*/
 
-.prot_title {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #8d8d8d;
-    color: #252525;
-    font-size: 40px;
-}
-
 .port_img {
     display: flex;
     flex-wrap: wrap;
@@ -223,6 +217,97 @@ body {
     margin-bottom: 40px;
 }
 
+/*contato*/
+
+.contact {
+    display: flex;
+    height: 800px;
+    background-image: url('../images/c1.jpg');
+    background-size: cover;
+    justify-content: center;
+}
+
+.contact_int {
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+
+.contact_info {
+    display: flex;
+    flex: 1;
+    color: #8d8d8d;
+    flex-direction: column;
+}
+
+.contact_title {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact_bar {
+    margin-right: 320px;
+    width: 70px;
+    background: #8d8d8d;
+    height: 3px;
+    margin-bottom: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.field {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 2px solid #8d8d8d;
+    font-size: 16px;
+    outline: 0;
+    color: #8d8d8d;
+    justify-content: center;
+}
+
+textarea {
+    height: 150px;
+}
+
+.btn {
+    height: 40px;
+    background-color: #8d8d8d;
+    border: 3px solid #8d8d8d;
+    font-size: 16px;
+    color: #252525;
+    cursor: pointer;
+    outline: 0;
+    font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+    color: #8d8d8d;
+    font-weight: bold;
+}
+
+.contact_plus {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 20px;
+    color: #8d8d8d;
+}
+
+.contact_other {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+}
+
+.alter {
+    margin-right: 20px;
+}
+
 /*rodapé*/
 
 .footer_desc {
@@ -265,3 +350,57 @@ body {
     color: #8d8d8d;
 }
 
+@media screen and (max-width: 1530px) {
+
+    .contact_int {
+        flex-direction: column;
+    }
+    .contact_info {
+        margin-top: 40px;
+    }
+    .contact_plus {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    .banner {
+        height: 1000px;
+    }
+
+    .banner_int {
+        flex-direction: column;
+    }
+
+    .photo {
+        justify-content: center;
+    }
+
+    .desc {
+        align-items: center;
+    }
+
+    .banner_port {
+        background-attachment: scroll;
+    }
+
+    .banner_port_desc{
+        align-items: center;
+    }
+
+    .banner_port_sub {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .menumob {
+        font-size: 50px;
+        color: #8d8d8d;
+    }
+
+}
