@@ -23,16 +23,17 @@
                     <img src="assests/images/logo para fundo escuro.png" alt="logo" width="150">
                 </div>
                 <div class="menu">
-                        <i class="fas fa-bars" class="menumob" onclick="toggleMenu()">
-                        <nav>
-                            </i>
-                            <ul>
-                                <li><a class="scroll" onclick="menuClick('home');">home</a></li>
-                                <li><a class="scroll" onclick="menuClick('sobre');">sobre</a></li>
-                                <li><a class="scroll" onclick="menuClick('portifolio');">portifolio</a></li>
-                                <li><a class="scroll" onclick="menuClick('contato');">contato</a></li>
-                            </ul>
-                        </nav>
+                    <nav>
+                        <div class="menu_mobile">
+                            <i class="fas fa-bars menum"></i>
+                        </div>
+                        <ul>
+                            <li><a class="scroll" onclick="menuClick('home');">home</a></li>
+                            <li><a class="scroll" onclick="menuClick('sobre');">sobre</a></li>
+                            <li><a class="scroll" onclick="menuClick('portifolio');">portifolio</a></li>
+                            <li><a class="scroll" onclick="menuClick('contato');">contato</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -41,17 +42,20 @@
     <!-- baner e parte do sobre -->
     <section id="home">
         <div class="banner_home">
-            <div class="banner_home_img">
-                <i class="fas fa-camera"></i>
+            <div class="banner_home_int">
+                <div class="banner_home_img">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="banner_home_title">
+                    TAIS EDUARDA
+                </div>
+                <div class="banner_home_sub">
+                    FOTOGRAFIA
+                </div>
+                <div class="banner_home_bar">
+                </div>
             </div>
-            <div class="banner_home_title">
-                TAIS EDUARDA
-            </div>
-            <div class="banner_home_sub">
-                FOTOGRAFIA
-            </div>
-            <div class="banner_home_bar">
-            </div>
+
         </div>
     </section>
 
@@ -138,7 +142,6 @@
                         Entre em Contato
                     </div>
                     <div class="contact_bar">
-
                     </div>
                     <div class="contact_form">
                         <form class="form" method="POST" action="./assests/php/email.php">
@@ -169,7 +172,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
