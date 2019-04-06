@@ -24,14 +24,20 @@
                 </div>
                 <div class="menu">
                     <nav>
-                        <div class="menu_mobile">
+                        <div class="menu_mobile" onclick="menuMobile();">
                             <i class="fas fa-bars menum"></i>
                         </div>
-                        <ul>
+                        <ul id="uldesktop">
                             <li><a class="scroll" onclick="menuClick('home');">home</a></li>
                             <li><a class="scroll" onclick="menuClick('sobre');">sobre</a></li>
                             <li><a class="scroll" onclick="menuClick('portifolio');">portifolio</a></li>
                             <li><a class="scroll" onclick="menuClick('contato');">contato</a></li>
+                        </ul>
+                        <ul id="ulmobile">
+                            <li><a class="scroll" onclick="menuClick('home'); mobileMenuClick();">home</a></li>
+                            <li><a class="scroll" onclick="menuClick('sobre'); mobileMenuClick();">sobre</a></li>
+                            <li><a class="scroll" onclick="menuClick('portifolio'); mobileMenuClick();">portifolio</a></li>
+                            <li><a class="scroll" onclick="menuClick('contato'); mobileMenuClick();">contato</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -109,7 +115,7 @@
                 <img src="assests/images/Porti/k3.jpg" alt="foto" height="33%">
                 <img src="assests/images/Porti/l1.jpg" alt="foto" height="33%">
                 <img src="assests/images/Porti/l2.jpg" alt="foto" height="33%">
-                <img src="assests/images/Porti/l3.jpg" alt="foto" height="33%">
+                <img src="assests/images/Porti/l3.jpg" alt="foto" height="33%" class="not">
             </div>
         </div>
     </section>

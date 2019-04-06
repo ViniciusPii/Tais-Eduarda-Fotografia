@@ -7,25 +7,20 @@ function menuClick(id) {
     });
 }
 
-
-window.onload = function(){
-    document.querySelector(".menu_mobile").addEventListener("click", function(){
-        if (document.querySelector(".menu ul").style.display == 'flex') {
-            document.querySelector(".menu ul").style.display = 'none';
+function menuMobile() {
+  if (document.getElementById("ulmobile").style.display == 'flex') {
+            document.getElementById("ulmobile").style.display = 'none';
         } else {
-            document.querySelector(".menu ul").style.display = 'flex';
+            document.getElementById("ulmobile").style.display = 'flex';
         }
-    })
 }
 
-window.onload = function(){
-    document.querySelector(".menu").addEventListener("click", function(){
-        if (document.querySelector(".menu ul").style.display == 'flex') {
-            document.querySelector(".menu ul").style.display = 'none';
-        } else {
-            document.querySelector(".menu ul").style.display = 'flex';
-        }
-    })
+function mobileMenuClick(){
+    if (document.querySelector("#ulmobile").style.display == 'flex') {
+      document.querySelector("#ulmobile").style.display = 'none';
+    } else {
+      document.querySelector("#ulmobile").style.display = 'flex';
+    }
 }
 
 
