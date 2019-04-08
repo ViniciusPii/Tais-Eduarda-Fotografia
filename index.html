@@ -9,6 +9,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
         integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
         crossorigin="anonymous"></script>
+    <script src="assests/js/jquery-3.3.1.min.js"></script>
     <script src="assests/js/main.js"></script>
     <title>Tais Fotografia</title>
 </head>
@@ -20,23 +21,25 @@
         <div class="top">
             <div class="top_int">
                 <div class="logo">
+                    <i class="fas fa-camera icon"></i>
                     <img src="assests/images/logo para fundo escuro.png" alt="logo" width="150">
                 </div>
                 <div class="menu">
-                    <nav>
+                    <nav id="menu-center">
                         <div class="menu_mobile" onclick="menuMobile();">
                             <i class="fas fa-bars menum"></i>
                         </div>
                         <ul id="uldesktop">
-                            <li><a class="scroll" onclick="menuClick('home');">home</a></li>
-                            <li><a class="scroll" onclick="menuClick('sobre');">sobre</a></li>
-                            <li><a class="scroll" onclick="menuClick('portifolio');">portifolio</a></li>
-                            <li><a class="scroll" onclick="menuClick('contato');">contato</a></li>
+                            <li><a class="active" href="#home">home</a></li>
+                            <li><a href="#sobre">sobre</a></li>
+                            <li><a href="#portfolio">portfolio</a></li>
+                            <li><a href="#contato">contato</a></li>
                         </ul>
                         <ul id="ulmobile">
                             <li><a class="scroll" onclick="menuClick('home'); mobileMenuClick();">home</a></li>
                             <li><a class="scroll" onclick="menuClick('sobre'); mobileMenuClick();">sobre</a></li>
-                            <li><a class="scroll" onclick="menuClick('portifolio'); mobileMenuClick();">portifolio</a></li>
+                            <li><a class="scroll" onclick="menuClick('portfolio'); mobileMenuClick();">portfolio</a>
+                            </li>
                             <li><a class="scroll" onclick="menuClick('contato'); mobileMenuClick();">contato</a></li>
                         </ul>
                     </nav>
@@ -103,8 +106,8 @@
         </div>
     </section>
 
-    <!-- portifolio -->
-    <section id="portifolio">
+    <!-- portfolio -->
+    <section id="portfolio">
         <div class="port">
             <div class="port_img">
                 <img src="assests/images/Porti/e1.jpg" alt="foto" height="33%">
@@ -118,26 +121,29 @@
                 <img src="assests/images/Porti/l3.jpg" alt="foto" height="33%" class="not">
             </div>
         </div>
-    </section>
+        <!-- banner final -->
+        <section id="portfolio">
+            <div class="banner_port">
+                <div class="banner_port_desc">
+                    <div class="banner_port_title">
+                        Descubra Momentos
+                    </div>
+                    <div class="banner_port_bar">
 
-    <!-- banner final -->
-    <section>
-        <div class="banner_port">
-            <div class="banner_port_desc">
-                <div class="banner_port_title">
-                    Descubra Momentos
-                </div>
-                <div class="banner_port_bar">
-
-                </div>
-                <div class="banner_port_sub">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus impedit mollitia sequi iste, omnis
-                    beatae ducimus maiores! Quae tempore pariatur at sequi, placeat ducimus, dolorum, dolor distinctio
-                    quibusdam corrupti possimus.
+                    </div>
+                    <div class="banner_port_sub">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus impedit mollitia sequi iste,
+                        omnis
+                        beatae ducimus maiores! Quae tempore pariatur at sequi, placeat ducimus, dolorum, dolor
+                        distinctio
+                        quibusdam corrupti possimus.
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
+
+
 
     <!-- contato -->
     <section id="contato">
@@ -187,7 +193,7 @@
         <div class="footer_desc">
             <div class="footer_desc_int">
                 <div class="footer_image">
-                    <a onclick="menuClick('home');"><i class="fas fa-angle-up"></i></a>
+                    <a href="#home"><i class="fas fa-angle-up"></i></a>
                 </div>
                 <div class="footer_text">
                     Voltar ao inicio

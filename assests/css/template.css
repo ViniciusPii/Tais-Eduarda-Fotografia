@@ -30,6 +30,12 @@ body {
     padding-left: 20px;
 }
 
+.logo .icon {
+    font-size: 40px;
+    color: #8d8d8d;
+    display: none;
+}
+
 .menu {
     display: flex;
     flex: 1;
@@ -58,16 +64,18 @@ body {
     color: #252525;
 }
 
+.menu .active {
+    background-color: #8d8d8d;
+    color: #252525;
+}
+
 .menu_mobile {
     display: none;
-    font-size: 50px;
     color: #8d8d8d;
-    margin-top: 35px;
-    margin-bottom: 35px;
 }
 
 .menum {
-    font-size: 50px;
+    font-size: 40px;
     color: #8d8d8d;
 }
 
@@ -75,7 +83,7 @@ body {
 
 .banner_home {
     background-image: url("../images/flor.jpg");
-    height: 700px;
+    height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -124,7 +132,7 @@ body {
 
 .banner {
     background-image: url("../images/flor.jpg");
-    height: 700px;
+    height: 900px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -346,6 +354,9 @@ textarea {
 .footer_image {
     display: flex;
     justify-content: center;
+}
+
+.footer_image a {
     font-size: 40px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -446,10 +457,20 @@ textarea {
   }
     .top {
         height: auto;
+        height: 50px;
     }
+
     .top_int {
        width: 100%;
        padding-right: 20px;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .logo .icon {
+        display: block;
     }
 
     .menu {
@@ -465,7 +486,11 @@ textarea {
         background-color: #252525;
         margin: auto;
         align-items: center;
-        height: 100vh;
+    }
+
+    .menu a {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .menu a:hover {
@@ -497,6 +522,12 @@ textarea {
     .not {
         display: none;
     }
+
+    .banner_home {
+        height: 530px;
+        margin-top: 50px;
+    }
+
 }
 
 @media screen and (max-width: 680px) {
